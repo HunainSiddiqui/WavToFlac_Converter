@@ -2,6 +2,19 @@
 
 This project provides a real-time audio conversion service that converts WAV audio streams to FLAC format using Go, Gorilla Mux, and WebSockets. The service can handle multiple simultaneous audio streams efficiently.
 
+## LIVE DEMO
+
+The client application is hosted on Vercel and can be accessed at the following URL:
+
+[Live Demo](https://front-task-zeta.vercel.app/)
+
+This is just a demo we deployed the backend on render here is the link to the backend
+
+https://peritys-task-21bce10211.onrender.com
+
+this is the link to the backend you can test the backend by sending the audio file to the backend and it will convert the audio file to flac format and send it back to you.
+
+
 ## Features
 
 - Real-time audio streaming and conversion
@@ -60,7 +73,11 @@ go test ./tests.
 
 ## Integration Tests
 
-You can run integration tests to check WebSocket connections and the real-time streaming capability.
+You can run integration tests to check WebSocket connections and the real-time streaming capability.We have use testify for the integration test.
+
+```bash
+    go test ./tests 
+```
 
 ## API Endpoints
 
